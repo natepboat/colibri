@@ -1,0 +1,9 @@
+#PlayTennis PlainText CaseBase
+#Columns are: caseId, raining, month, last-match, result
+
+1,false,February,15,1,true
+2,true,March,15,2,true
+3,true,January,10,3,true
+4,false,February,30,4,false
+5,false,January,20,5,true
+1,false,February,15,6;6,true

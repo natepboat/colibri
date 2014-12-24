@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<TextFileConfiguration>
+    <FilePath>/home/boat/cbr/pub.txt</FilePath>
+    <Delimiters>,</Delimiters>
+    <DescriptionClassName>representation.CaseDescription</DescriptionClassName>
+    <DescriptionMappings>
+        <Map>id</Map>
+        <Map>area</Map>
+        <Map>open_time</Map>
+        <Map>close_date</Map>
+        <Map>close_date</Map>
+        <Map>indoor</Map>
+        <Map>outdoor</Map>
+        <Map>aircondition</Map>
+        <Map>free_wifi</Map>
+        <Map>karaoke_room</Map>
+        <Map>public_karaoke</Map>
+        <Map>music_type</Map>
+        <Map>live_music</Map>
+        <Map>live_start</Map>
+        <Map>live_end</Map>
+        <Map>dj</Map>
+        <Map>remove_chair</Map>
+        <Map>smoothies</Map>
+        <Map>draft_beer</Map>
+        <Map>cocktail</Map>
+        <Map>snack</Map>
+        <Map>food</Map>
+        <Map>beer_girl</Map>
+        <Map>min_price</Map>
+        <Map>max_price</Map>
+        <Map>open_bottle</Map>
+        <Map>roof_top</Map>
+    </DescriptionMappings>
+    <SolutionClassName>representation.CaseSolution</SolutionClassName>
+    <SolutionMappings>
+        <Map>name</Map>
+    </SolutionMappings>
+</TextFileConfiguration>
