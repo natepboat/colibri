@@ -1,6 +1,8 @@
 package cbr;
 
 import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.Generated;
 
@@ -13,13 +15,6 @@ import jcolibri.exception.ExecutionException;
 import jcolibri.exception.InitializingException;
 import jcolibri.method.retrieve.NNretrieval.NNConfig;
 import representation.CaseDescription;
-import representation.CaseSolution;
-import jcolibri.method.retrieve.NNretrieval.NNConfig;
-import jcolibri.cbrcore.Attribute;
-import jcolibri.method.retrieve.NNretrieval.NNConfig;
-import jcolibri.cbrcore.Attribute;
-import jcolibri.method.retrieve.NNretrieval.NNConfig;
-import jcolibri.cbrcore.Attribute;
 
 public class CBRApplication implements StandardCBRApplication {
 
@@ -71,173 +66,120 @@ public class CBRApplication implements StandardCBRApplication {
 		simConfig
 				.addMapping(
 						attribute0,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute0, 1.00);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.MaxString());
+		simConfig.setWeight(attribute0, 0.95);
 		Attribute attribute1 = new Attribute("open_time", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute1,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.EnumCyclicDistance());
-		simConfig.setWeight(attribute1, 1.00);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
+		simConfig.setWeight(attribute1, 0.60);
 		Attribute attribute2 = new Attribute("close_time",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute2,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.EnumCyclicDistance());
-		simConfig.setWeight(attribute2, 1.00);
-		Attribute attribute3 = new Attribute("close_date",
-				CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
+		simConfig.setWeight(attribute2, 0.60);
+		Attribute attribute3 = new Attribute("outdoor", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute3,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.textual.compressionbased.CompressionBased());
-		simConfig.setWeight(attribute3, 1.00);
-		Attribute attribute4 = new Attribute("indoor", CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute3, 0.40);
+		Attribute attribute4 = new Attribute("aircondition",
+				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute4,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute4, 1.00);
-		Attribute attribute5 = new Attribute("outdoor", CaseDescription.class);
+		simConfig.setWeight(attribute4, 0.40);
+		Attribute attribute5 = new Attribute("free_wifi", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute5,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute5, 1.00);
-		Attribute attribute6 = new Attribute("aircondition",
+		simConfig.setWeight(attribute5, 0.10);
+		Attribute attribute6 = new Attribute("public_karaoke",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute6,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute6, 1.00);
-		Attribute attribute7 = new Attribute("free_wifi", CaseDescription.class);
+		simConfig.setWeight(attribute6, 0.05);
+		Attribute attribute7 = new Attribute("live_music",
+				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute7,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute7, 1.00);
-		Attribute attribute8 = new Attribute("karaoke_room",
-				CaseDescription.class);
+		simConfig.setWeight(attribute7, 0.50);
+		Attribute attribute8 = new Attribute("dj", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute8,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute8, 1.00);
-		Attribute attribute9 = new Attribute("public_karaoke",
+		simConfig.setWeight(attribute8, 0.50);
+		Attribute attribute9 = new Attribute("remove_chair",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute9,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute9, 1.00);
-		Attribute attribute10 = new Attribute("music_type",
+		simConfig.setWeight(attribute9, 0.35);
+		Attribute attribute10 = new Attribute("smoothies",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute10,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.textual.compressionbased.CompressionBased());
-		simConfig.setWeight(attribute10, 1.00);
-		Attribute attribute11 = new Attribute("live_music",
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute10, 0.75);
+		Attribute attribute11 = new Attribute("draft_beer",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute11,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute11, 1.00);
-		Attribute attribute12 = new Attribute("live_start",
-				CaseDescription.class);
+		simConfig.setWeight(attribute11, 0.75);
+		Attribute attribute12 = new Attribute("cocktail", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute12,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.EnumCyclicDistance());
-		simConfig.setWeight(attribute12, 1.00);
-		Attribute attribute13 = new Attribute("live_end", CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute12, 0.75);
+		Attribute attribute13 = new Attribute("snack", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute13,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.EnumCyclicDistance());
-		simConfig.setWeight(attribute13, 1.00);
-		Attribute attribute14 = new Attribute("dj", CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute13, 0.40);
+		Attribute attribute14 = new Attribute("food", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute14,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute14, 1.00);
-		Attribute attribute15 = new Attribute("remove_chair",
+		simConfig.setWeight(attribute14, 0.65);
+		Attribute attribute15 = new Attribute("beer_girl",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute15,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute15, 1.00);
-		Attribute attribute16 = new Attribute("smoothies",
+		simConfig.setWeight(attribute15, 0.70);
+		Attribute attribute16 = new Attribute("avg_price",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute16,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute16, 1.00);
-		Attribute attribute17 = new Attribute("draft_beer",
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
+		simConfig.setWeight(attribute16, 0.85);
+		Attribute attribute17 = new Attribute("open_bottle",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute17,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute17, 1.00);
-		Attribute attribute18 = new Attribute("cocktail", CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute18,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute18, 1.00);
-		Attribute attribute19 = new Attribute("snack", CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute19,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute19, 1.00);
-		Attribute attribute20 = new Attribute("food", CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute20,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute20, 1.00);
-		Attribute attribute21 = new Attribute("beer_girl",
-				CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute21,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute21, 1.00);
-		Attribute attribute22 = new Attribute("min_price",
-				CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute22,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
-		simConfig.setWeight(attribute22, 1.00);
-		Attribute attribute23 = new Attribute("max_price",
-				CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute23,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
-		simConfig.setWeight(attribute23, 1.00);
-		Attribute attribute24 = new Attribute("open_bottle",
-				CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute24,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute24, 1.00);
-		Attribute attribute25 = new Attribute("roof_top", CaseDescription.class);
-		simConfig
-				.addMapping(
-						attribute25,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute25, 1.00);
+		simConfig.setWeight(attribute17, 0.80);
 		return simConfig;
 	}
 
@@ -259,10 +201,24 @@ public class CBRApplication implements StandardCBRApplication {
 						labels);
 		scoredCases = jcolibri.method.retrieve.NNretrieval.NNScoringMethod
 				.evaluateSimilarity(casebase.getCases(), query, simConfig);
+		
 		selectedCases = jcolibri.method.retrieve.selection.SelectCases
 				.selectTopK(scoredCases, k);
 		userChoice = jcolibri.util.gui.DisplayCasesTableMethod
 				.displayCasesInTableSelectCase(selectedCases);
+		if (userChoice.isBuy() || userChoice.isRefineQuery()) {
+			List<CBRCase> listCase = new ArrayList();
+			CBRCase cbrCase = new CBRCase();
+			cbrCase.setDescription(query.getDescription());
+			cbrCase.setSolution(userChoice.getSelectedCase().getSolution());
+			listCase.add(userChoice.getSelectedCase());
+			userChoice = jcolibri.util.gui.DisplayCasesMethod.displayCases(listCase, userChoice.isRefineQuery());
+			if (userChoice.isRefineQuery()) {
+//				jcolibri.method.revise.DefineNewIdsMethod.defineNewIdsMethod(userChoice.getSelectedCase(), null);
+				casebase.learnCases(jcolibri.method.reuse.CombineQueryAndCasesMethod.combine(query, listCase));
+			}
+		}
+		System.exit(0);
 	}
 
 	@Generated(value = { "ColibriStudio" })

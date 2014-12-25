@@ -7,18 +7,12 @@
         <Map>id</Map>
         <Map>area</Map>
         <Map>open_time</Map>
-        <Map>close_date</Map>
-        <Map>close_date</Map>
-        <Map>indoor</Map>
+        <Map>close_time</Map>
         <Map>outdoor</Map>
         <Map>aircondition</Map>
         <Map>free_wifi</Map>
-        <Map>karaoke_room</Map>
         <Map>public_karaoke</Map>
-        <Map>music_type</Map>
         <Map>live_music</Map>
-        <Map>live_start</Map>
-        <Map>live_end</Map>
         <Map>dj</Map>
         <Map>remove_chair</Map>
         <Map>smoothies</Map>
@@ -27,13 +21,12 @@
         <Map>snack</Map>
         <Map>food</Map>
         <Map>beer_girl</Map>
-        <Map>min_price</Map>
-        <Map>max_price</Map>
+        <Map>avg_price</Map>
         <Map>open_bottle</Map>
-        <Map>roof_top</Map>
     </DescriptionMappings>
     <SolutionClassName>representation.CaseSolution</SolutionClassName>
     <SolutionMappings>
+        <Map>sol_id</Map>
         <Map>name</Map>
     </SolutionMappings>
 </TextFileConfiguration>

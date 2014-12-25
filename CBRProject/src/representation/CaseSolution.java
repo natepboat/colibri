@@ -18,9 +18,9 @@ public class CaseSolution implements CaseComponent {
 		{
 			return sol_id;
 		}
-	public void setSol_id(java.lang.Integer sol_id27)
+	public void setSol_id(java.lang.Integer sol_id19)
 		{
-			this.sol_id = sol_id27;
+			this.sol_id = sol_id19;
 		}
 
 	private java.lang.String name;
@@ -30,9 +30,9 @@ public class CaseSolution implements CaseComponent {
 		{
 			return name;
 		}
-	public void setName(java.lang.String name28)
+	public void setName(java.lang.String name20)
 		{
-			this.name = name28;
+			this.name = name20;
 		}
 
 
