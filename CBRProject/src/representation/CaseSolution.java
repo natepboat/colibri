@@ -11,18 +11,6 @@ public class CaseSolution implements CaseComponent {
 	/* Generated Class. Please Do Not Modify... */ 
 
 
-	private java.lang.Integer sol_id;
-
-
-	public java.lang.Integer getSol_id()
-		{
-			return sol_id;
-		}
-	public void setSol_id(java.lang.Integer sol_id19)
-		{
-			this.sol_id = sol_id19;
-		}
-
 	private java.lang.String name;
 
 
@@ -30,9 +18,21 @@ public class CaseSolution implements CaseComponent {
 		{
 			return name;
 		}
-	public void setName(java.lang.String name20)
+	public void setName(java.lang.String name19)
 		{
-			this.name = name20;
+			this.name = name19;
+		}
+
+	private java.lang.Integer sol_id;
+
+
+	public java.lang.Integer getSol_id()
+		{
+			return sol_id;
+		}
+	public void setSol_id(java.lang.Integer sol_id20)
+		{
+			this.sol_id = sol_id20;
 		}
 
 

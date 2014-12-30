@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
 <SimilarityConfig>
     <Mapping attribute="Description.beer_girl" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.70"/>
-    <Mapping attribute="Description.close_time" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold" weight="0.60"/>
+    <Mapping attribute="Description.close_time" function="jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaMoreIsBetter" weight="0.60"/>
     <Mapping attribute="Description.food" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.65"/>
     <Mapping attribute="Description.live_end" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Interval" weight="1.00"/>
     <Mapping attribute="Description.free_wifi" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.10"/>
     <Mapping attribute="Description.cocktail" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.75"/>
-    <Mapping attribute="Description.avg_price" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold" weight="0.85"/>
+    <Mapping attribute="Description.avg_price" function="jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaLessIsBetter" weight="0.85"/>
     <Mapping attribute="Description.live_start" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Interval" weight="1.00"/>
     <Mapping attribute="Description.smoothies" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.75"/>
     <Mapping attribute="Description.public_karaoke" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.05"/>
@@ -19,16 +19,17 @@
     <Mapping attribute="Description.karaoke_room" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="1.00"/>
     <Mapping attribute="Description.aircondition" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.40"/>
     <Mapping attribute="Description.close_date" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="1.00"/>
-    <Mapping attribute="Description.open_time" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold" weight="0.60"/>
-    <Mapping attribute="Description.area" function="jcolibri.method.retrieve.NNretrieval.similarity.local.MaxString" weight="0.95"/>
-    <Mapping attribute="Description.snack" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.40"/>
+    <Mapping attribute="Description.area" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.95"/>
+    <Mapping attribute="Description.open_time" function="jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaLessIsBetter" weight="0.60"/>
     <Mapping attribute="Description.draft_beer" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.75"/>
+    <Mapping attribute="Description.snack" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.40"/>
     <Mapping attribute="Description.music_type" function="jcolibri.method.retrieve.NNretrieval.similarity.local.MaxString" weight="1.00"/>
+    <Mapping attribute="Description.id" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.00"/>
     <Mapping attribute="Description.open_bottle" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.80"/>
     <Mapping attribute="Description.outdoor" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.40"/>
     <Mapping attribute="Description.max_price" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold" weight="1.00"/>
-    <Mapping attribute="Description.live_music" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.50"/>
     <Mapping attribute="Description.indoor" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="1.00"/>
+    <Mapping attribute="Description.live_music" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.50"/>
     <Mapping attribute="Description.dj" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.50"/>
     <Mapping attribute="Description" function="jcolibri.method.retrieve.NNretrieval.similarity.global.Average" weight="1.00"/>
 </SimilarityConfig>

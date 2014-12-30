@@ -2,6 +2,7 @@ package cbr;
 
 import java.net.MalformedURLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Generated;
@@ -15,6 +16,25 @@ import jcolibri.exception.ExecutionException;
 import jcolibri.exception.InitializingException;
 import jcolibri.method.retrieve.NNretrieval.NNConfig;
 import representation.CaseDescription;
+import representation.CaseSolution;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
+import jcolibri.method.retrieve.NNretrieval.NNConfig;
+import jcolibri.cbrcore.Attribute;
 
 public class CBRApplication implements StandardCBRApplication {
 
@@ -62,124 +82,130 @@ public class CBRApplication implements StandardCBRApplication {
 		NNConfig simConfig = new NNConfig();
 		simConfig
 				.setDescriptionSimFunction(new jcolibri.method.retrieve.NNretrieval.similarity.global.Average());
-		Attribute attribute0 = new Attribute("area", CaseDescription.class);
+		Attribute attribute0 = new Attribute("id", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute0,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.MaxString());
-		simConfig.setWeight(attribute0, 0.95);
-		Attribute attribute1 = new Attribute("open_time", CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute0, 0.00);
+		Attribute attribute1 = new Attribute("area", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute1,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
-		simConfig.setWeight(attribute1, 0.60);
-		Attribute attribute2 = new Attribute("close_time",
-				CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute1, 0.95);
+		Attribute attribute2 = new Attribute("open_time", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute2,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaLessIsBetter());
 		simConfig.setWeight(attribute2, 0.60);
-		Attribute attribute3 = new Attribute("outdoor", CaseDescription.class);
+		Attribute attribute3 = new Attribute("close_time",
+				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute3,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute3, 0.40);
-		Attribute attribute4 = new Attribute("aircondition",
-				CaseDescription.class);
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaMoreIsBetter());
+		simConfig.setWeight(attribute3, 0.60);
+		Attribute attribute4 = new Attribute("outdoor", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute4,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
 		simConfig.setWeight(attribute4, 0.40);
-		Attribute attribute5 = new Attribute("free_wifi", CaseDescription.class);
+		Attribute attribute5 = new Attribute("aircondition",
+				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute5,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute5, 0.10);
-		Attribute attribute6 = new Attribute("public_karaoke",
-				CaseDescription.class);
+		simConfig.setWeight(attribute5, 0.40);
+		Attribute attribute6 = new Attribute("free_wifi", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute6,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute6, 0.05);
-		Attribute attribute7 = new Attribute("live_music",
+		simConfig.setWeight(attribute6, 0.10);
+		Attribute attribute7 = new Attribute("public_karaoke",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute7,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute7, 0.50);
-		Attribute attribute8 = new Attribute("dj", CaseDescription.class);
+		simConfig.setWeight(attribute7, 0.05);
+		Attribute attribute8 = new Attribute("live_music",
+				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute8,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
 		simConfig.setWeight(attribute8, 0.50);
-		Attribute attribute9 = new Attribute("remove_chair",
-				CaseDescription.class);
+		Attribute attribute9 = new Attribute("dj", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute9,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute9, 0.35);
-		Attribute attribute10 = new Attribute("smoothies",
+		simConfig.setWeight(attribute9, 0.50);
+		Attribute attribute10 = new Attribute("remove_chair",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute10,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute10, 0.75);
-		Attribute attribute11 = new Attribute("draft_beer",
+		simConfig.setWeight(attribute10, 0.35);
+		Attribute attribute11 = new Attribute("smoothies",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute11,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
 		simConfig.setWeight(attribute11, 0.75);
-		Attribute attribute12 = new Attribute("cocktail", CaseDescription.class);
+		Attribute attribute12 = new Attribute("draft_beer",
+				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute12,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
 		simConfig.setWeight(attribute12, 0.75);
-		Attribute attribute13 = new Attribute("snack", CaseDescription.class);
+		Attribute attribute13 = new Attribute("cocktail", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute13,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute13, 0.40);
-		Attribute attribute14 = new Attribute("food", CaseDescription.class);
+		simConfig.setWeight(attribute13, 0.75);
+		Attribute attribute14 = new Attribute("snack", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute14,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute14, 0.65);
-		Attribute attribute15 = new Attribute("beer_girl",
-				CaseDescription.class);
+		simConfig.setWeight(attribute14, 0.40);
+		Attribute attribute15 = new Attribute("food", CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute15,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute15, 0.70);
-		Attribute attribute16 = new Attribute("avg_price",
+		simConfig.setWeight(attribute15, 0.65);
+		Attribute attribute16 = new Attribute("beer_girl",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute16,
-						new jcolibri.method.retrieve.NNretrieval.similarity.local.Threshold());
-		simConfig.setWeight(attribute16, 0.85);
-		Attribute attribute17 = new Attribute("open_bottle",
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
+		simConfig.setWeight(attribute16, 0.70);
+		Attribute attribute17 = new Attribute("avg_price",
 				CaseDescription.class);
 		simConfig
 				.addMapping(
 						attribute17,
+						new jcolibri.method.retrieve.NNretrieval.similarity.local.recommenders.InrecaLessIsBetter());
+		simConfig.setWeight(attribute17, 0.85);
+		Attribute attribute18 = new Attribute("open_bottle",
+				CaseDescription.class);
+		simConfig
+				.addMapping(
+						attribute18,
 						new jcolibri.method.retrieve.NNretrieval.similarity.local.Equal());
-		simConfig.setWeight(attribute17, 0.80);
+		simConfig.setWeight(attribute18, 0.80);
 		return simConfig;
 	}
 
@@ -208,20 +234,17 @@ public class CBRApplication implements StandardCBRApplication {
 				.displayCasesInTableSelectCase(selectedCases);
 		if (userChoice.isBuy() || userChoice.isRefineQuery()) {
 			List<CBRCase> listCase = new ArrayList();
-			CBRCase cbrCase = new CBRCase();
-			cbrCase.setDescription(query.getDescription());
-			cbrCase.setSolution(userChoice.getSelectedCase().getSolution());
+			CBRCase cbrCase = userChoice.getSelectedCase();
 			listCase.add(userChoice.getSelectedCase());
 			userChoice = jcolibri.util.gui.DisplayCasesMethod.displayCases(listCase, userChoice.isRefineQuery());
 			if (userChoice.isRefineQuery()) {
-//				jcolibri.method.revise.DefineNewIdsMethod.defineNewIdsMethod(userChoice.getSelectedCase(), null);
-				casebase.learnCases(jcolibri.method.reuse.CombineQueryAndCasesMethod.combine(query, listCase));
+				cbrCase.setDescription(query.getDescription());
+				casebase.learnCases(listCase);
 			}
 		}
 		System.exit(0);
 	}
 
-	@Generated(value = { "ColibriStudio" })
 	public jcolibri.cbrcore.CBRCaseBase preCycle() throws ExecutionException {
 		casebase = jcolibri.method.precycle.LoadCases.loadCases(connector,
 				casebase);
@@ -285,9 +308,9 @@ public class CBRApplication implements StandardCBRApplication {
 			cbrApp.configure();
 			CBRCaseBase caseBase=cbrApp.preCycle();
 			CBRQuery query = new CBRQuery();
-			for (CBRCase c:caseBase.getCases()){
-				query.setDescription(c.getDescription());
-			}
+			CaseDescription caseComponent = new CaseDescription();
+			caseComponent.setId(caseBase.getCases().size()+1);
+			query.setDescription(caseComponent);
 			cbrApp.cycle(query);
 		} catch (ExecutionException e){
 			e.printStackTrace();

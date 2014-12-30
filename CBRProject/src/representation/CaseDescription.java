@@ -11,112 +11,112 @@ public class CaseDescription implements CaseComponent {
 	/* Generated Class. Please Do Not Modify... */ 
 
 
-	private java.lang.Integer id;
+	private java.lang.Boolean open_bottle;
 
 
-	public java.lang.Integer getId()
+	public java.lang.Boolean getOpen_bottle()
 		{
-			return id;
+			return open_bottle;
 		}
-	public void setId(java.lang.Integer id0)
+	public void setOpen_bottle(java.lang.Boolean open_bottle0)
 		{
-			this.id = id0;
-		}
-
-	private java.lang.String area;
-
-
-	public java.lang.String getArea()
-		{
-			return area;
-		}
-	public void setArea(java.lang.String area1)
-		{
-			this.area = area1;
+			this.open_bottle = open_bottle0;
 		}
 
-	private java.lang.Integer open_time;
+	private java.lang.Integer avg_price;
 
 
-	public java.lang.Integer getOpen_time()
+	public java.lang.Integer getAvg_price()
 		{
-			return open_time;
+			return avg_price;
 		}
-	public void setOpen_time(java.lang.Integer open_time2)
+	public void setAvg_price(java.lang.Integer avg_price1)
 		{
-			this.open_time = open_time2;
-		}
-
-	private java.lang.Integer close_time;
-
-
-	public java.lang.Integer getClose_time()
-		{
-			return close_time;
-		}
-	public void setClose_time(java.lang.Integer close_time3)
-		{
-			this.close_time = close_time3;
+			this.avg_price = avg_price1;
 		}
 
-	private java.lang.Boolean outdoor;
+	private java.lang.Boolean beer_girl;
 
 
-	public java.lang.Boolean getOutdoor()
+	public java.lang.Boolean getBeer_girl()
 		{
-			return outdoor;
+			return beer_girl;
 		}
-	public void setOutdoor(java.lang.Boolean outdoor4)
+	public void setBeer_girl(java.lang.Boolean beer_girl2)
 		{
-			this.outdoor = outdoor4;
-		}
-
-	private java.lang.Boolean aircondition;
-
-
-	public java.lang.Boolean getAircondition()
-		{
-			return aircondition;
-		}
-	public void setAircondition(java.lang.Boolean aircondition5)
-		{
-			this.aircondition = aircondition5;
+			this.beer_girl = beer_girl2;
 		}
 
-	private java.lang.Boolean free_wifi;
+	private java.lang.Boolean food;
 
 
-	public java.lang.Boolean getFree_wifi()
+	public java.lang.Boolean getFood()
 		{
-			return free_wifi;
+			return food;
 		}
-	public void setFree_wifi(java.lang.Boolean free_wifi6)
+	public void setFood(java.lang.Boolean food3)
 		{
-			this.free_wifi = free_wifi6;
-		}
-
-	private java.lang.Boolean public_karaoke;
-
-
-	public java.lang.Boolean getPublic_karaoke()
-		{
-			return public_karaoke;
-		}
-	public void setPublic_karaoke(java.lang.Boolean public_karaoke7)
-		{
-			this.public_karaoke = public_karaoke7;
+			this.food = food3;
 		}
 
-	private java.lang.Boolean live_music;
+	private java.lang.Boolean snack;
 
 
-	public java.lang.Boolean getLive_music()
+	public java.lang.Boolean getSnack()
 		{
-			return live_music;
+			return snack;
 		}
-	public void setLive_music(java.lang.Boolean live_music8)
+	public void setSnack(java.lang.Boolean snack4)
 		{
-			this.live_music = live_music8;
+			this.snack = snack4;
+		}
+
+	private java.lang.Boolean cocktail;
+
+
+	public java.lang.Boolean getCocktail()
+		{
+			return cocktail;
+		}
+	public void setCocktail(java.lang.Boolean cocktail5)
+		{
+			this.cocktail = cocktail5;
+		}
+
+	private java.lang.Boolean draft_beer;
+
+
+	public java.lang.Boolean getDraft_beer()
+		{
+			return draft_beer;
+		}
+	public void setDraft_beer(java.lang.Boolean draft_beer6)
+		{
+			this.draft_beer = draft_beer6;
+		}
+
+	private java.lang.Boolean smoothies;
+
+
+	public java.lang.Boolean getSmoothies()
+		{
+			return smoothies;
+		}
+	public void setSmoothies(java.lang.Boolean smoothies7)
+		{
+			this.smoothies = smoothies7;
+		}
+
+	private java.lang.Boolean remove_chair;
+
+
+	public java.lang.Boolean getRemove_chair()
+		{
+			return remove_chair;
+		}
+	public void setRemove_chair(java.lang.Boolean remove_chair8)
+		{
+			this.remove_chair = remove_chair8;
 		}
 
 	private java.lang.Boolean dj;
@@ -131,112 +131,112 @@ public class CaseDescription implements CaseComponent {
 			this.dj = dj9;
 		}
 
-	private java.lang.Boolean remove_chair;
+	private java.lang.Boolean live_music;
 
 
-	public java.lang.Boolean getRemove_chair()
+	public java.lang.Boolean getLive_music()
 		{
-			return remove_chair;
+			return live_music;
 		}
-	public void setRemove_chair(java.lang.Boolean remove_chair10)
+	public void setLive_music(java.lang.Boolean live_music10)
 		{
-			this.remove_chair = remove_chair10;
-		}
-
-	private java.lang.Boolean smoothies;
-
-
-	public java.lang.Boolean getSmoothies()
-		{
-			return smoothies;
-		}
-	public void setSmoothies(java.lang.Boolean smoothies11)
-		{
-			this.smoothies = smoothies11;
+			this.live_music = live_music10;
 		}
 
-	private java.lang.Boolean draft_beer;
+	private java.lang.Boolean public_karaoke;
 
 
-	public java.lang.Boolean getDraft_beer()
+	public java.lang.Boolean getPublic_karaoke()
 		{
-			return draft_beer;
+			return public_karaoke;
 		}
-	public void setDraft_beer(java.lang.Boolean draft_beer12)
+	public void setPublic_karaoke(java.lang.Boolean public_karaoke11)
 		{
-			this.draft_beer = draft_beer12;
-		}
-
-	private java.lang.Boolean cocktail;
-
-
-	public java.lang.Boolean getCocktail()
-		{
-			return cocktail;
-		}
-	public void setCocktail(java.lang.Boolean cocktail13)
-		{
-			this.cocktail = cocktail13;
+			this.public_karaoke = public_karaoke11;
 		}
 
-	private java.lang.Boolean snack;
+	private java.lang.Boolean free_wifi;
 
 
-	public java.lang.Boolean getSnack()
+	public java.lang.Boolean getFree_wifi()
 		{
-			return snack;
+			return free_wifi;
 		}
-	public void setSnack(java.lang.Boolean snack14)
+	public void setFree_wifi(java.lang.Boolean free_wifi12)
 		{
-			this.snack = snack14;
-		}
-
-	private java.lang.Boolean food;
-
-
-	public java.lang.Boolean getFood()
-		{
-			return food;
-		}
-	public void setFood(java.lang.Boolean food15)
-		{
-			this.food = food15;
+			this.free_wifi = free_wifi12;
 		}
 
-	private java.lang.Boolean beer_girl;
+	private java.lang.Boolean aircondition;
 
 
-	public java.lang.Boolean getBeer_girl()
+	public java.lang.Boolean getAircondition()
 		{
-			return beer_girl;
+			return aircondition;
 		}
-	public void setBeer_girl(java.lang.Boolean beer_girl16)
+	public void setAircondition(java.lang.Boolean aircondition13)
 		{
-			this.beer_girl = beer_girl16;
-		}
-
-	private java.lang.Integer avg_price;
-
-
-	public java.lang.Integer getAvg_price()
-		{
-			return avg_price;
-		}
-	public void setAvg_price(java.lang.Integer avg_price17)
-		{
-			this.avg_price = avg_price17;
+			this.aircondition = aircondition13;
 		}
 
-	private java.lang.Boolean open_bottle;
+	private java.lang.Boolean outdoor;
 
 
-	public java.lang.Boolean getOpen_bottle()
+	public java.lang.Boolean getOutdoor()
 		{
-			return open_bottle;
+			return outdoor;
 		}
-	public void setOpen_bottle(java.lang.Boolean open_bottle18)
+	public void setOutdoor(java.lang.Boolean outdoor14)
 		{
-			this.open_bottle = open_bottle18;
+			this.outdoor = outdoor14;
+		}
+
+	private java.lang.Integer close_time;
+
+
+	public java.lang.Integer getClose_time()
+		{
+			return close_time;
+		}
+	public void setClose_time(java.lang.Integer close_time15)
+		{
+			this.close_time = close_time15;
+		}
+
+	private java.lang.Integer open_time;
+
+
+	public java.lang.Integer getOpen_time()
+		{
+			return open_time;
+		}
+	public void setOpen_time(java.lang.Integer open_time16)
+		{
+			this.open_time = open_time16;
+		}
+
+	private java.lang.String area;
+
+
+	public java.lang.String getArea()
+		{
+			return area;
+		}
+	public void setArea(java.lang.String area17)
+		{
+			this.area = area17;
+		}
+
+	private java.lang.Integer id;
+
+
+	public java.lang.Integer getId()
+		{
+			return id;
+		}
+	public void setId(java.lang.Integer id18)
+		{
+			this.id = id18;
 		}
 
 
@@ -246,7 +246,7 @@ public class CaseDescription implements CaseComponent {
 		} 
 
 	public String toString()		{
-			return "["+ area + " , " + free_wifi + " , " + dj + " , " + smoothies + " , " + snack + " , " + open_time + " , " + avg_price + " , " + close_time + " , " + aircondition + " , " + remove_chair + " , " + food + " , " + public_karaoke + " , " + outdoor + " , " + live_music + " , " + open_bottle + " , " + cocktail + " , " + beer_girl + " , " + id + " , " + draft_beer +"]";
+			return "["+ area + " , " + free_wifi + " , " + snack + " , " + smoothies + " , " + dj + " , " + open_time + " , " + avg_price + " , " + aircondition + " , " + close_time + " , " + remove_chair + " , " + food + " , " + public_karaoke + " , " + outdoor + " , " + open_bottle + " , " + live_music + " , " + cocktail + " , " + beer_girl + " , " + id + " , " + draft_beer +"]";
 		}
 
 }
