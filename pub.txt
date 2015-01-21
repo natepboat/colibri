@@ -1,19 +1,18 @@
-1,Meeting Corner,Sukhumvit-Onnut,19:00:00,2:00:00,none,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,{pop;rock;country;acoustic;chillout},TRUE,20:30:00,2:00:00,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,100,500,TRUE,FALSE
-2,Malila,Ladprao-Chatuchak,18:00:00,1:00:00,none,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,{pop;rock;country;acoustic;chillout},TRUE,21:00:00,2:00:00,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,100,500,TRUE,FALSE
-3,Saxophone Pub,Victory Monument - Din Dang,18:00:00,2:00:00,none,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,{jazz},TRUE,20:00:00,2:00:00,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,200,1500,TRUE,FALSE
-4,Route66,Radchada-Huaykwang,18:00:00,4:00:00,none,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,{pop;rock;acoustic;chillout;hip-hop;R&B},TRUE,21:00:00,3:00:00,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,100,1500,TRUE,FALSE
-5,Slim RCA,Radchada-Huaykwang,18:00:00,4:00:00,none,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,{pop;rock;acoustic;chillout;hip-hop;R&B},TRUE,21:00:00,3:00:00,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,100,1500,TRUE,FALSE
-6,Brick Bar,Khao San,19:00:00,2:00:00,none,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,{pop;rock;acoustic;chillout;electronic},TRUE,21:00:00,2:00:00,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,100,1500,TRUE,FALSE
-7,The Club,Khao San,19:00:00,2:00:00,none,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,{dance;electronic},FALSE,none,none,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,300,1000,TRUE,FALSE
-8,Jazz Happen,Khao San,18:00:00,1:00:00,none,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,{jazz},TRUE,19:00:00,1:00:00,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,FALSE,100,1000,TRUE,FALSE
-9,The Iron Fairies,Sukhumvit-Onnut,19:00:00,2:00:00,none,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,{jazz},TRUE,21:00:00,2:00:00,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,200,1500,TRUE,FALSE
-10,The Nest,Sukhumvit-Onnut,18:00:00,2:00:00,none,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,{pop;rock;dance;acoustic;chillout},FALSE,21:00:00,2:00:00,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,300,2000,TRUE,TRUE
-11,The Living Room,Sukhumvit-Onnut,19:00:00,2:00:00,none,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,{pop;rock;dance;acoustic;chillout},TRUE,21:00:00,2:00:00,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,300,2000,TRUE,TRUE
-12,Cloud 47,Silom,19:00:00,2:00:00,Monday,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,{pop;rock;dance;acoustic;chillout},TRUE,21:00:00,2:00:00,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,300,2000,TRUE,TRUE
-13,Happy Bar,Khao San,19:00:00,4:00:00,Monday,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,{pop;rock;country;reggae},TRUE,19:00:00,3:00:00,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,100,500,FALSE,FALSE
-14,Taksura (Hua Chang Bridge),Siam-Phayathai,18:00:00,1:00:00,none,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,{pop;rock;country;acoustic;chillout;R&B},FALSE,none,none,FALSE,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,100,500,TRUE,FALSE
-15,HEAP,Siam-Phayathai,19:00:00,2:00:00,none,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,{pop;rock;dance;acoustic;chillout},TRUE,21:00:00,2:00:00,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,100,1000,TRUE,FALSE
-16,Above Eleven Rooftop Bar,Sukhumvit-Onnut,18:00:00,2:00:00,none,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,{pop;rock;dance;acoustic;chillout},TRUE,21:00:00,2:00:00,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,300,2000,TRUE,TRUE
-17,Water Side,Ladprao-Chatuchak,18:00:00,1:00:00,none,TRUE,TRUE,TRUE,FALSE,TRUE,FALSE,{pop;rock;acoustic;chillout},TRUE,21:00:00,1:00:00,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,300,1000,TRUE,FALSE
-18,Queen B,Sukhumvit-Onnut,17:00:00,2:00:00,none,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,{pop;rock;country},TRUE,21:00:00,2:00:00,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,100,500,TRUE,FALSE
-
+1,Sukhumvit-Onnut,19,2,true,true,true,false,true,true,false,true,true,true,true,true,true,400,true,1,Meeting Corner
+2,Ladprao-Chatuchak,18,1,true,true,false,false,true,false,false,true,true,false,true,true,true,400,true,2,Malila
+3,Victory Monument - Din Dang,18,2,false,true,false,false,true,false,false,false,true,true,true,true,false,850,true,3,Saxophone Pub
+4,Radchada-Huaykwang,18,4,true,true,false,false,true,true,true,false,true,true,true,true,true,800,true,4,Route66
+5,Radchada-Huaykwang,18,4,true,true,false,false,true,true,true,false,true,true,true,true,true,700,true,5,Slim RCA
+6,Khao San,19,2,false,true,false,false,true,true,false,false,true,true,true,true,true,800,true,6,Brick Bar
+7,Khao San,19,2,false,true,false,false,false,true,false,false,false,true,true,false,false,650,true,7,The Club
+8,Khao San,18,1,true,true,false,false,true,false,false,true,true,true,true,true,false,550,true,8,Jazz Happen
+9,Sukhumvit-Onnut,19,2,false,true,false,true,true,false,false,false,true,true,true,true,false,850,true,9,The Iron Fairies
+10,Sukhumvit-Onnut,18,2,true,true,true,false,false,true,false,false,true,true,true,true,true,1150,true,10,The Nest
+11,Sukhumvit-Onnut,19,2,true,true,true,false,true,true,false,false,true,true,true,true,true,1150,true,11,The Living Room
+12,Silom,19,2,true,true,true,false,true,true,false,false,true,true,true,true,true,1150,true,12,Cloud 47
+13,Khao San,19,4,true,false,false,false,true,false,false,false,false,false,false,false,false,300,false,13,Happy Bar
+14,Siam-Phayathai,18,1,true,false,false,false,false,false,false,true,true,false,true,true,false,300,true,14,Taksura (Hua Chang Bridge)
+15,Siam-Phayathai,19,2,true,true,false,false,true,true,false,true,true,true,true,true,true,550,true,15,HEAP
+16,Sukhumvit-Onnut,18,2,true,true,true,false,true,true,false,false,true,true,true,true,true,1150,true,16,Above Eleven Rooftop Bar
+17,Ladprao-Chatuchak,18,1,true,true,false,false,true,false,false,true,true,true,true,true,true,650,true,17,Water Side
+18,Sukhumvit-Onnut,17,2,true,true,true,false,true,false,false,false,true,true,true,true,false,300,true,18,Queen B
